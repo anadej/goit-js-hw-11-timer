@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");const e=function({selector:e,targetDate:t}){this.selector=e,this.targetDate=t,this.showTimer=function(e,t,a,o){const r=document.querySelector(this.selector),s=r.querySelector('[data-value="days"]'),n=r.querySelector('[data-value="hours"]'),l=r.querySelector('[data-value="mins"]'),c=r.querySelector('[data-value="secs"]');s.textContent=e,n.textContent=t,l.textContent=a,c.textContent=o}},t=new e({selector:"#timer-1",targetDate:new Date("Jul 17, 2021")});setInterval(()=>{const e=new Date,a=t.targetDate-e,o=Math.floor(a/864e5),r=Math.floor(a%864e5/36e5),s=Math.floor(a%36e5/6e4),n=Math.floor(a%6e4/1e3);t.showTimer(o,r,s,n)},1e3);
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/parcel-project-template/src.c26dc837.js.map
+//# sourceMappingURL=/parcel-project-template/src.808a42d9.js.map
