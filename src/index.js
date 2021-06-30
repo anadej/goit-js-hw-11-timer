@@ -4,16 +4,16 @@ const CountdownTimer = function ({ selector, targetDate }) {
   this.selector = selector;
   this.targetDate = targetDate;
 
-  this.showTimer = function (d, h, m, s) {
+  this.showTimer = function (dd, hh, mm, ss) {
     const refTimer = document.querySelector(this.selector);
     const daysRef = refTimer.querySelector('[data-value="days"]');
     const hoursRef = refTimer.querySelector('[data-value="hours"]');
     const minsRef = refTimer.querySelector('[data-value="mins"]');
     const secsRef = refTimer.querySelector('[data-value="secs"]');
-    daysRef.textContent = d;
-    hoursRef.textContent = h;
-    minsRef.textContent = m;
-    secsRef.textContent = s;
+    daysRef.textContent = dd;
+    hoursRef.textContent = hh;
+    minsRef.textContent = mm;
+    secsRef.textContent = ss;
   };
 };
 
